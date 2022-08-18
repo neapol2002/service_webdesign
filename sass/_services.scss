@@ -1,0 +1,126 @@
+.service{
+    margin-bottom: 10rem;
+    
+    &__heading{
+        display: block;
+        text-align: center;
+        font-size: 4rem;
+        font-family: $font-hding-primary;
+        font-weight: 700;;
+        margin-bottom: 1rem;
+        
+        @media only screen and (max-width: $bp-small) {
+            margin: 2rem;
+        }
+    }
+    
+    &__text{
+        display: block;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 5rem;
+        
+        @media only screen and (max-width: $bp-small) {
+            margin: 2rem;
+        }
+    }
+    
+    &__cards{
+        display: flex;
+//        flex-basis: 26rem;
+        gap: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    &__card{
+//        width: 23%;
+        flex: 0 1 25.5rem;
+        padding: 7rem 4rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 1.2rem 1.2rem 3rem rgba(#B69D1E,.2);
+        border-radius: 1rem;
+        transition: all .6s;
+        position: relative;
+        
+//        @media only screen and (max-width: $bp-largest) {
+//            width: 30rem;
+//            
+//                &:not(:last-child){
+//                margin-bottom: 2rem;
+//            }
+//        }
+        
+        &:hover{
+            transform: translateY(-2rem);
+            background-color: $color-primary;
+            box-shadow: 0 1.2rem 3rem rgba(#B69D1E,.20);
+            
+            &>*{
+                color: #fff;
+                fill: #fff;
+            }
+            
+        }
+        
+        &-icon{
+            width: 5rem;
+            height: 5rem;
+            margin-top: -3rem;
+            fill: $color-primary;
+        }
+        
+        &-name{
+            font-size: 1.8rem;
+            font-family: $font-hding-secondary;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            color: $color-primary;
+        }
+        
+        &-text{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+    
+}
+
+.arrow__box{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: none;
+    margin: 0 auto;
+    color: $color-primary;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 40%;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.20);
+    
+    .arrow{
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $color-primary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+}
+
+.service__card:hover .arrow__box{
+    display: block;
+    color: $color-primary;
+}

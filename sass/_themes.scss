@@ -1,0 +1,115 @@
+.theme{
+//    background-color: blue;
+    overflow: hidden;
+    
+    &__heading{
+        display: block;
+        text-align: center;
+        font-size: 3.2rem;
+        font-family: $font-hding-primary;
+        font-weight: 700;;
+        margin-bottom: 1rem;
+        
+        @media only screen and (max-width: $bp-small) {
+            margin: 2rem;
+        }
+    }
+    
+    &__text{
+        display: block;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 5rem;
+        
+        @media only screen and (max-width: $bp-small) {
+            margin: 2rem;
+        }
+    }
+    
+    &__cards{
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 10rem;
+        gap: 3.9rem;
+        justify-content: center;
+        
+//        flex-basis: 25rem;
+    }
+    
+    &__card{
+//        width: 31%;
+        flex: 0 1 35rem;
+        border-radius: 1rem;
+//        margin-bottom: 3.8rem;
+        box-shadow: 1.6rem 0 3rem rgba(0,0,0,.2);
+        background-color: #fff;
+        
+//        @media only screen and (max-width: $bp-largest) {
+//            width: 30rem;
+//                &:not(:last-child){
+//                margin-bottom: 3rem;
+//            }
+//        }
+    
+    }
+    
+    &__img{
+        width: 100%;
+    }
+    
+    &__detail{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+    }
+    
+    &__texts{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__name{
+        font-size: 1.5rem;
+        font-family: $font-hding-primary;
+        font-weight: 600;
+        margin-bottom: .6rem;
+    }
+    
+    &__item{
+        font-size: .9rem;
+        color: #949494;
+        font-weight: 400;
+    }
+    
+    &__pricerate{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    &__price{
+        font-size: 1.6rem;
+        font-family: $font-hding-primary;
+        font-weight: 700;
+        margin-bottom: .6rem;
+    }
+    
+    &__rating{
+        
+        &-star{
+            width: 1rem;
+            height: 1rem;
+            margin-right: 3px;
+            
+            &-1{
+                width: 1rem;
+                height: 1rem;
+                stroke: 10;
+                stroke: yellow;
+            }
+        }
+        
+        
+    }
+}

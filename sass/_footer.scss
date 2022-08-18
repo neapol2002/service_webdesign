@@ -1,0 +1,214 @@
+.footer{
+    color: #fff;
+    background-color: $color-footer;
+    padding: 20rem 11rem 3rem 11rem;
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+    position: relative;
+    margin-top: 20rem;
+    
+    @media only screen and (max-width: $bp-largest) {
+            padding: 20rem 8rem 3rem 8rem;
+        }
+    
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 6rem;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(85deg ,$color-footer, #fff, $color-footer);
+        border-image-slice: 1;
+        
+        @media only screen and (max-width: 69rem) {
+            justify-content: flex-start;
+            gap: 5rem
+        }
+        
+        @media only screen and (max-width: 69rem) {
+            gap: 2rem;
+        }
+    }
+    
+    &__logo{
+        width: 15rem;
+        margin-bottom: 1.8rem;
+        margin-left: -5px;
+    }
+    
+    &__text{
+        font-size: 1.5rem;
+        color: #C4CAD3;
+        line-height: 1.9;
+        margin-bottom: 2.5rem;
+    }
+    
+    &__icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #fff;
+        
+        @media only screen and (max-width: 26rem) {
+                &:not(:last-type){
+                margin-right: 1.5rem;
+            }
+        }
+        
+        &:hover{
+            fill: $color-primary;
+        }
+        
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+    
+    &__name{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    
+    &__list{
+        
+    }
+    
+    &__item{
+        list-style: none;
+        
+        &:not(:last-child){
+            margin-bottom: .8rem;
+        }
+    }
+    
+    &__link{
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #C4CAD3;
+        font-weight: 300;
+    }
+}
+
+.company{
+    margin-right: 8rem;
+    align-self: stretch;
+    
+   @media only screen and (max-width: $bp-medium) {
+            margin-right: 2rem;
+        }
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    
+    &__text{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__item{
+        list-style: none;
+        
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+    }
+    
+    &__link{
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #C4CAD3;
+    }
+    
+    span{
+        font-weight: 600;
+        color: #707070;
+    }
+}
+
+.solution{
+    min-width: 84%;
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 6rem 5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
+    position: absolute;
+    top: -9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+    
+    @media only screen and (max-width: 70rem) {
+        top: -11rem;
+    }
+    
+    @media only screen and (max-width: $bp-small) {
+        padding: 3rem;
+    }
+    
+    @media only screen and (max-width: 37.4rem) {
+        padding: 1rem;
+    }
+    
+    @media only screen and (min-device-width : 456px) and (max-device-width : 600px) {
+        top: -8rem;
+    }
+    
+    @media only screen and (max-width: 320px) {
+            top: -13rem;
+        }
+    
+    
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    &__logo{
+        width: 6.5rem;
+//        margin-right: 3rem;
+    }
+    
+    &__texts{
+        margin-right: auto;
+    }
+    
+    &__heading{
+        color: #000;
+        text-align: start;
+        font-size: 2.5rem;
+        font-family: $font-hding-primary;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        
+        @media only screen and (max-width: 335px) {
+            text-align: center;
+        }
+    }
+    
+    &__text{
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #95A1B5;
+    }
+    
+    &__btn{
+        background-color: $color-primary;
+        color: #fff;
+    }
+}
